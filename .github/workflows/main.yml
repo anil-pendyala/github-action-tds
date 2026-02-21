@@ -1,0 +1,15 @@
+name: My Auto-Grader Action
+
+# The workflow_dispatch trigger allows us to manually run the action via a button
+on: [push, workflow_dispatch] 
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Here is your required email step
+      - name: 23f3003847@ds.study.iitm.ac.in
+        run: echo "Action executed successfully!"
